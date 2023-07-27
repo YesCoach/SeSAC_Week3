@@ -15,8 +15,11 @@
 		894F55862A71FFF10034201A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894F55842A71FFF10034201A /* LaunchScreen.storyboard */; };
 		894F558E2A720FEF0034201A /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F558D2A720FEF0034201A /* TodoTableViewController.swift */; };
 		894F55922A7232D70034201A /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F55912A7232D70034201A /* StudyTableViewController.swift */; };
-		894F55942A7249670034201A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F55932A7249670034201A /* Extension.swift */; };
 		894F55962A724FFC0034201A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894F55952A724FFC0034201A /* Setting.storyboard */; };
+		894F55982A7258840034201A /* AppSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F55972A7258840034201A /* AppSettingViewController.swift */; };
+		894F559B2A7260690034201A /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F559A2A7260690034201A /* Setting.swift */; };
+		894F559E2A7265FC0034201A /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F559D2A7265FC0034201A /* UILabel+.swift */; };
+		894F55A02A7266DB0034201A /* UITableViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F559F2A7266DB0034201A /* UITableViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +33,11 @@
 		894F55872A71FFF10034201A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		894F558D2A720FEF0034201A /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		894F55912A7232D70034201A /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
-		894F55932A7249670034201A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		894F55952A724FFC0034201A /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		894F55972A7258840034201A /* AppSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingViewController.swift; sourceTree = "<group>"; };
+		894F559A2A7260690034201A /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		894F559D2A7265FC0034201A /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		894F559F2A7266DB0034201A /* UITableViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,16 +73,35 @@
 				894F55792A71FFEF0034201A /* AppDelegate.swift */,
 				894F557B2A71FFEF0034201A /* SceneDelegate.swift */,
 				894F557D2A71FFEF0034201A /* ViewController.swift */,
-				894F557F2A71FFEF0034201A /* Main.storyboard */,
-				894F55952A724FFC0034201A /* Setting.storyboard */,
-				894F55932A7249670034201A /* Extension.swift */,
 				894F558D2A720FEF0034201A /* TodoTableViewController.swift */,
 				894F55912A7232D70034201A /* StudyTableViewController.swift */,
+				894F559C2A7265F10034201A /* Extension */,
+				894F55992A72588C0034201A /* Assignment */,
 				894F55822A71FFF10034201A /* Assets.xcassets */,
+				894F557F2A71FFEF0034201A /* Main.storyboard */,
 				894F55842A71FFF10034201A /* LaunchScreen.storyboard */,
 				894F55872A71FFF10034201A /* Info.plist */,
 			);
 			path = Week3;
+			sourceTree = "<group>";
+		};
+		894F55992A72588C0034201A /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				894F55952A724FFC0034201A /* Setting.storyboard */,
+				894F55972A7258840034201A /* AppSettingViewController.swift */,
+				894F559A2A7260690034201A /* Setting.swift */,
+			);
+			path = Assignment;
+			sourceTree = "<group>";
+		};
+		894F559C2A7265F10034201A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				894F559D2A7265FC0034201A /* UILabel+.swift */,
+				894F559F2A7266DB0034201A /* UITableViewController+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,12 +176,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894F559E2A7265FC0034201A /* UILabel+.swift in Sources */,
 				894F557E2A71FFEF0034201A /* ViewController.swift in Sources */,
 				894F558E2A720FEF0034201A /* TodoTableViewController.swift in Sources */,
 				894F55922A7232D70034201A /* StudyTableViewController.swift in Sources */,
-				894F55942A7249670034201A /* Extension.swift in Sources */,
+				894F55982A7258840034201A /* AppSettingViewController.swift in Sources */,
 				894F557A2A71FFEF0034201A /* AppDelegate.swift in Sources */,
+				894F559B2A7260690034201A /* Setting.swift in Sources */,
 				894F557C2A71FFEF0034201A /* SceneDelegate.swift in Sources */,
+				894F55A02A7266DB0034201A /* UITableViewController+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
