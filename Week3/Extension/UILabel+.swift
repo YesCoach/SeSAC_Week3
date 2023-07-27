@@ -13,6 +13,11 @@ extension UILabel {
         self.textColor = .label
     }
 
+    func configureShoppingText() {
+        self.font = .systemFont(ofSize: 16, weight: .regular)
+        self.textColor = .label
+    }
+
     func configureTitleText() {
         self.font = .boldSystemFont(ofSize: 20)
         self.textColor = .red

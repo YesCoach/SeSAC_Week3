@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892E895F2A726C7E00254B54 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E895E2A726C7E00254B54 /* ShoppingViewController.swift */; };
 		894F557A2A71FFEF0034201A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F55792A71FFEF0034201A /* AppDelegate.swift */; };
 		894F557C2A71FFEF0034201A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F557B2A71FFEF0034201A /* SceneDelegate.swift */; };
 		894F557E2A71FFEF0034201A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F557D2A71FFEF0034201A /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		892E895E2A726C7E00254B54 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		894F55762A71FFEF0034201A /* Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		894F55792A71FFEF0034201A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		894F557B2A71FFEF0034201A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				894F55952A724FFC0034201A /* Setting.storyboard */,
+				892E895E2A726C7E00254B54 /* ShoppingViewController.swift */,
 				894F55972A7258840034201A /* AppSettingViewController.swift */,
 				894F559A2A7260690034201A /* Setting.swift */,
 			);
@@ -180,6 +183,7 @@
 				894F557E2A71FFEF0034201A /* ViewController.swift in Sources */,
 				894F558E2A720FEF0034201A /* TodoTableViewController.swift in Sources */,
 				894F55922A7232D70034201A /* StudyTableViewController.swift in Sources */,
+				892E895F2A726C7E00254B54 /* ShoppingViewController.swift in Sources */,
 				894F55982A7258840034201A /* AppSettingViewController.swift in Sources */,
 				894F557A2A71FFEF0034201A /* AppDelegate.swift in Sources */,
 				894F559B2A7260690034201A /* Setting.swift in Sources */,
