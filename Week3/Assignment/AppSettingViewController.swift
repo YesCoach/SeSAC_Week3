@@ -17,7 +17,10 @@ final class AppSettingViewController: UITableViewController {
 // MARK: - DataSource 구현부
 
 extension AppSettingViewController {
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(
+        _ tableView: UITableView,
+        titleForHeaderInSection section: Int
+    ) -> String? {
         guard let setting = Setting(rawValue: section) else {
             fatalError("Invalid Section")
         }
@@ -35,7 +38,10 @@ extension AppSettingViewController {
         return setting.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath
+    ) -> UITableViewCell {
         let section = indexPath.section
         let row = indexPath.row
         var description: String

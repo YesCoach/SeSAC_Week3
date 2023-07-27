@@ -21,7 +21,10 @@ class StudyTableViewController: UITableViewController {
         return 2
     }
 
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(
+        _ tableView: UITableView,
+        titleForHeaderInSection section: Int
+    ) -> String? {
         return section == 0 ?  "첫번쩨 섹션" : "두번째 섹션"
     }
 
@@ -31,7 +34,10 @@ class StudyTableViewController: UITableViewController {
     }
 
     // 2. 셀 데이터 및 디자인 처리(필수)
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath
+    ) -> UITableViewCell {
 
         // identifier가 없는 셀이 있을 수 있기 때문에 옵셔널로 반환을 해줌 > 해제가 필요!
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell")!

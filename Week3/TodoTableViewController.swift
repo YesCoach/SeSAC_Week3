@@ -9,7 +9,11 @@ import UIKit
 
 class TodoTableViewController: UITableViewController {
 
-    private var list: [String] = ["장보기", "영화보기", "잠자기", "코드보기", "과제하기", "복습하기", "쉬기", "쉬자", "쉬어"]
+    private var list: [String] = [
+        "장보기", "영화보기", "잠자기", "코드보기",
+        "과제하기", "복습하기", "쉬기", "쉬자", "쉬어"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -61,7 +65,10 @@ class TodoTableViewController: UITableViewController {
     }
 
     // 3. 셀의 높이: 44(기본 높이)
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(
+        _ tableView: UITableView,
+        heightForRowAt indexPath: IndexPath
+    ) -> CGFloat {
         return 70.0
     }
 }
