@@ -71,8 +71,8 @@ extension ShoppingViewContorller {
             fatalError("Invalid Cell")
         }
         cell.textLabel?.text = data[indexPath.row]
-        cell.textLabel?.configureShoppingText()
-        
+        cell.configureShoppingType()
+
         return cell
     }
 }

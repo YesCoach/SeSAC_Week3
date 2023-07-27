@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		892E895F2A726C7E00254B54 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E895E2A726C7E00254B54 /* ShoppingViewController.swift */; };
+		892E89612A728E1000254B54 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E89602A728E1000254B54 /* UITableViewCell+.swift */; };
 		894F557A2A71FFEF0034201A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F55792A71FFEF0034201A /* AppDelegate.swift */; };
 		894F557C2A71FFEF0034201A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F557B2A71FFEF0034201A /* SceneDelegate.swift */; };
 		894F557E2A71FFEF0034201A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F557D2A71FFEF0034201A /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		892E895E2A726C7E00254B54 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		892E89602A728E1000254B54 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		894F55762A71FFEF0034201A /* Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		894F55792A71FFEF0034201A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		894F557B2A71FFEF0034201A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				894F559D2A7265FC0034201A /* UILabel+.swift */,
 				894F559F2A7266DB0034201A /* UITableViewController+.swift */,
+				892E89602A728E1000254B54 /* UITableViewCell+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			files = (
 				894F559E2A7265FC0034201A /* UILabel+.swift in Sources */,
 				894F557E2A71FFEF0034201A /* ViewController.swift in Sources */,
+				892E89612A728E1000254B54 /* UITableViewCell+.swift in Sources */,
 				894F558E2A720FEF0034201A /* TodoTableViewController.swift in Sources */,
 				894F55922A7232D70034201A /* StudyTableViewController.swift in Sources */,
 				892E895F2A726C7E00254B54 /* ShoppingViewController.swift in Sources */,
