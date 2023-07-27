@@ -13,6 +13,9 @@
 		894F55812A71FFEF0034201A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894F557F2A71FFEF0034201A /* Main.storyboard */; };
 		894F55832A71FFF10034201A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 894F55822A71FFF10034201A /* Assets.xcassets */; };
 		894F55862A71FFF10034201A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894F55842A71FFF10034201A /* LaunchScreen.storyboard */; };
+		894F558E2A720FEF0034201A /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F558D2A720FEF0034201A /* TodoTableViewController.swift */; };
+		894F55922A7232D70034201A /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F55912A7232D70034201A /* StudyTableViewController.swift */; };
+		894F55942A7249670034201A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F55932A7249670034201A /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		894F55822A71FFF10034201A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		894F55852A71FFF10034201A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		894F55872A71FFF10034201A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		894F558D2A720FEF0034201A /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		894F55912A7232D70034201A /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
+		894F55932A7249670034201A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				894F557B2A71FFEF0034201A /* SceneDelegate.swift */,
 				894F557D2A71FFEF0034201A /* ViewController.swift */,
 				894F557F2A71FFEF0034201A /* Main.storyboard */,
+				894F55932A7249670034201A /* Extension.swift */,
+				894F558D2A720FEF0034201A /* TodoTableViewController.swift */,
+				894F55912A7232D70034201A /* StudyTableViewController.swift */,
 				894F55822A71FFF10034201A /* Assets.xcassets */,
 				894F55842A71FFF10034201A /* LaunchScreen.storyboard */,
 				894F55872A71FFF10034201A /* Info.plist */,
@@ -139,6 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				894F557E2A71FFEF0034201A /* ViewController.swift in Sources */,
+				894F558E2A720FEF0034201A /* TodoTableViewController.swift in Sources */,
+				894F55922A7232D70034201A /* StudyTableViewController.swift in Sources */,
+				894F55942A7249670034201A /* Extension.swift in Sources */,
 				894F557A2A71FFEF0034201A /* AppDelegate.swift in Sources */,
 				894F557C2A71FFEF0034201A /* SceneDelegate.swift in Sources */,
 			);
