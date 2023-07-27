@@ -21,10 +21,7 @@ extension AppSettingViewController {
         _ tableView: UITableView,
         titleForHeaderInSection section: Int
     ) -> String? {
-        guard let setting = Setting(rawValue: section) else {
-            fatalError("Invalid Section")
-        }
-        return setting.description
+        return Setting(rawValue: section)?.description
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,10 +29,7 @@ extension AppSettingViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let setting = Setting(rawValue: section) else {
-            fatalError("Invalid Section")
-        }
-        return setting.count
+        return Setting(rawValue: section)?.count ?? 0
     }
 
     override func tableView(
@@ -48,10 +42,10 @@ extension AppSettingViewController {
 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: Setting.cellIdentifer)
         else {
-            fatalError("Invalid Cell")
+            return UITableViewCell()
         }
         guard let category = Setting(rawValue: section) else {
-            fatalError("Invalid Section")
+            return UITableViewCell()
         }
         switch category {
         case .whole:

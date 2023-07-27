@@ -71,7 +71,7 @@ extension ShoppingViewContorller {
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) else {
-            fatalError("Invalid Cell")
+            return UITableViewCell()
         }
         cell.textLabel?.text = data[indexPath.row]
         cell.configureShoppingType()
