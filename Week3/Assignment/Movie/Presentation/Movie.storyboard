@@ -33,7 +33,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="YPq-ql-s8d">
-                                                    <rect key="frame" x="120" y="0.0" width="253" height="157"/>
+                                                    <rect key="frame" x="120" y="0.0" width="253" height="65"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrE-HF-OFt">
                                                             <rect key="frame" x="0.0" y="0.0" width="253" height="20.333333333333332"/>
@@ -77,7 +77,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="줄거리" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfP-cb-jtf">
-                                                            <rect key="frame" x="0.0" y="44.666666666666664" width="253" height="112.33333333333334"/>
+                                                            <rect key="frame" x="0.0" y="44.666666666666664" width="253" height="20.333333333333336"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -90,7 +90,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="dpx-9y-VO4" secondAttribute="bottom" id="2ak-Nc-dd1"/>
                                                 <constraint firstItem="dpx-9y-VO4" firstAttribute="leading" secondItem="osz-h8-tom" secondAttribute="leading" id="AnM-JX-CEj"/>
                                                 <constraint firstItem="YPq-ql-s8d" firstAttribute="top" secondItem="osz-h8-tom" secondAttribute="top" id="LDC-sU-6gS"/>
-                                                <constraint firstAttribute="bottom" secondItem="YPq-ql-s8d" secondAttribute="bottom" id="NrR-UC-BUL"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YPq-ql-s8d" secondAttribute="bottom" id="NrR-UC-BUL"/>
                                                 <constraint firstAttribute="trailing" secondItem="YPq-ql-s8d" secondAttribute="trailing" id="fN8-Ir-tsT"/>
                                                 <constraint firstItem="YPq-ql-s8d" firstAttribute="leading" secondItem="dpx-9y-VO4" secondAttribute="trailing" constant="8" id="fWX-Lt-h6N"/>
                                                 <constraint firstItem="dpx-9y-VO4" firstAttribute="top" secondItem="osz-h8-tom" secondAttribute="top" id="juE-mE-crf"/>
