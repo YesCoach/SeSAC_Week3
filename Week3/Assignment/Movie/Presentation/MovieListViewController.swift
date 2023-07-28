@@ -24,7 +24,7 @@ final class MovieListViewController: UITableViewController {
 
 private extension MovieListViewController {
     func configureUI() {
-        tableView.rowHeight = 120.0
+        tableView.rowHeight = 180.0
     }
 
     func configureData() {
@@ -48,6 +48,8 @@ extension MovieListViewController {
         ) as? MovieListCell
         else { return UITableViewCell() }
 
+        let movie = data[indexPath.row]
+        cell.configure(with: movie)
         return cell
     }
 }
