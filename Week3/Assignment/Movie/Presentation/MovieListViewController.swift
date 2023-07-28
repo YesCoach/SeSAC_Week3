@@ -49,7 +49,9 @@ extension MovieListViewController {
         else { return UITableViewCell() }
 
         let movie = data[indexPath.row]
-        cell.configure(with: movie)
+        cell.configure(with: movie) { [weak self] isFavorite in
+            self?.data[indexPath.row].isFavorite = isFavorite
+        }
         return cell
     }
 }

@@ -13,21 +13,32 @@ final class MovieListCell: UITableViewCell {
 
     @IBOutlet var posterImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var likeButton: UIButton!
     @IBOutlet var releaseDateLabel: UILabel!
     @IBOutlet var runtimeLabel: UILabel!
     @IBOutlet var rateLabel: UILabel!
     @IBOutlet var overviewLabel: UILabel!
+
+    var completionHandler: ((Bool) -> ())?
+
+    @IBAction func didLikeButtonTouched(_ sender: UIButton) {
+        sender.isSelected.toggle()
+        completionHandler?(sender.isSelected)
+    }
 }
 
 extension MovieListCell {
-    func configure(with movie: Movie) {
+    func configure(with movie: Movie, completion: @escaping (Bool) -> ()) {
         configureUI()
         posterImageView.image = .init(named: movie.posterImageName)
         titleLabel.text = movie.title
+        likeButton.isSelected = movie.isFavorite
         releaseDateLabel.text = movie.releaseDate
         runtimeLabel.text = "\(movie.runtime)분"
         rateLabel.text = "\(movie.rate)점"
         overviewLabel.text = movie.overview
+
+        completionHandler = completion
     }
 }
 
@@ -42,5 +53,8 @@ private extension MovieListCell {
             $0?.font = .systemFont(ofSize: 16, weight: .medium)
         }
         overviewLabel.font = .systemFont(ofSize: 13, weight: .regular)
+        likeButton.setImage(.init(systemName: "star"), for: .normal)
+        likeButton.setImage(.init(systemName: "star.fill"), for: .selected)
+        likeButton.tintColor = .black
     }
 }
