@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bp2-vu-Vnz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W34-W4-YPx">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Movie List View Controller-->
+        <!--영화-->
         <scene sceneID="Els-aW-CTT">
             <objects>
                 <tableViewController id="Bp2-vu-Vnz" customClass="MovieListViewController" customModule="Week3" customModuleProvider="target" sceneMemberID="viewController">
@@ -136,8 +136,36 @@
                             <outlet property="delegate" destination="Bp2-vu-Vnz" id="bGz-dE-72Q"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="영화" id="Neb-J1-DTZ">
+                        <barButtonItem key="rightBarButtonItem" image="star" catalog="system" style="plain" id="4PH-Ur-dvC">
+                            <connections>
+                                <action selector="didStarButtonTouched:" destination="Bp2-vu-Vnz" id="pDS-uV-rFV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="favoriteBarButtonItem" destination="4PH-Ur-dvC" id="Nxu-Ni-W5k"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQ3-Tn-9mO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025.1908396946565" y="31.690140845070424"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="stL-oT-BNQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W34-W4-YPx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="772-Jd-eI6">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bp2-vu-Vnz" kind="relationship" relationship="rootViewController" id="MVq-fJ-Qn1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYf-RA-bH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="98.473282442748086" y="31.690140845070424"/>
         </scene>

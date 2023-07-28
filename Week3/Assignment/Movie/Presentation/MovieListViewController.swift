@@ -9,7 +9,10 @@ import UIKit
 
 final class MovieListViewController: UITableViewController {
 
-    private var data: [Movie] = [] {
+    @IBOutlet var favoriteBarButtonItem: UIBarButtonItem!
+
+    private var data: [Movie] = []
+    private var showData: [Movie] = [] {
         didSet {
             tableView.reloadData()
         }
@@ -20,15 +23,24 @@ final class MovieListViewController: UITableViewController {
         configureUI()
         configureData()
     }
+
+    @IBAction func didStarButtonTouched(_ sender: UIBarButtonItem) {
+        sender.isSelected.toggle()
+        sender.image = sender.isSelected ?
+            .init(systemName: "star.fill") : .init(systemName: "star")
+        showData = sender.isSelected ? data.filter {$0.isFavorite} : data
+    }
 }
 
 private extension MovieListViewController {
     func configureUI() {
         tableView.rowHeight = 180.0
+        favoriteBarButtonItem.tintColor = .black
     }
 
     func configureData() {
         data = MovieInfo().movie
+        showData = data
     }
 }
 
@@ -36,7 +48,7 @@ private extension MovieListViewController {
 
 extension MovieListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return showData.count
     }
 
     override func tableView(
@@ -48,9 +60,11 @@ extension MovieListViewController {
         ) as? MovieListCell
         else { return UITableViewCell() }
 
-        let movie = data[indexPath.row]
+        let movie = showData[indexPath.row]
         cell.configure(with: movie) { [weak self] isFavorite in
-            self?.data[indexPath.row].isFavorite = isFavorite
+            if let index = self?.data.firstIndex(where: { $0.title == movie.title }) {
+                self?.data[index].isFavorite = isFavorite
+            }
         }
         return cell
     }
