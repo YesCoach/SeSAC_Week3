@@ -25,6 +25,12 @@ final class MovieListCell: UITableViewCell {
         sender.isSelected.toggle()
         completionHandler?(sender.isSelected)
     }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        posterImageView.image = nil
+        completionHandler = nil
+    }
 }
 
 extension MovieListCell {
