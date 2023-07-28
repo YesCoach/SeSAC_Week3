@@ -35,7 +35,7 @@ extension CustomTableViewController {
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(
-            withIdentifier: "CustomTableViewCell"
+            withIdentifier: CustomTableViewCell.identifier
         ) as? CustomTableViewCell else { return UITableViewCell() }
 
         cell.configure(with: data.list[indexPath.row])

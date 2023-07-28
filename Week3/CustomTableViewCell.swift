@@ -8,6 +8,8 @@
 import UIKit
 
 final class CustomTableViewCell: UITableViewCell {
+    static let identifier = "CustomTableViewCell"
+
     @IBOutlet var backView: UIView!
     @IBOutlet var leadingImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
