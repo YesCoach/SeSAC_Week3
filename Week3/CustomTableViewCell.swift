@@ -13,6 +13,14 @@ final class CustomTableViewCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var subTitleLabel: UILabel!
     @IBOutlet var likeButton: UIButton!
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        titleLabel.text = ""
+        subTitleLabel.text = ""
+        likeButton.isSelected = false
+        leadingImageView.image = nil
+    }
 }
 
 extension CustomTableViewCell {

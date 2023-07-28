@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Todo {
+struct Todo { // 식판
     var main: String
     var sub: String
     var like: Bool

@@ -9,11 +9,7 @@ import UIKit
 
 final class CustomTableViewController: UITableViewController {
 
-    private var data = [
-        Todo(main: "장보기", sub: "23.07.03", like: false, done: false),
-        Todo(main: "영화보기", sub: "23.07.30", like: false, done: true),
-        Todo(main: "잠자기", sub: "23.07.13", like: true, done: true)
-    ]
+    private var data = TodoInformation()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +27,7 @@ private extension CustomTableViewController {
 
 extension CustomTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return data.list.count
     }
 
     override func tableView(
@@ -42,7 +38,7 @@ extension CustomTableViewController {
             withIdentifier: "CustomTableViewCell"
         ) as? CustomTableViewCell else { return UITableViewCell() }
 
-        cell.configure(with: data[indexPath.row])
+        cell.configure(with: data.list[indexPath.row])
 
         return cell
     }

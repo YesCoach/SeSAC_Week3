@@ -12,6 +12,7 @@
 		892E89682A73503F00254B54 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E89672A73503F00254B54 /* CustomTableViewController.swift */; };
 		892E896A2A73520A00254B54 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E89692A73520A00254B54 /* CustomTableViewCell.swift */; };
 		892E896C2A736C2C00254B54 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E896B2A736C2C00254B54 /* Todo.swift */; };
+		892E896E2A738A0500254B54 /* TodoInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E896D2A738A0500254B54 /* TodoInformation.swift */; };
 		894F557A2A71FFEF0034201A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F55792A71FFEF0034201A /* AppDelegate.swift */; };
 		894F557C2A71FFEF0034201A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F557B2A71FFEF0034201A /* SceneDelegate.swift */; };
 		894F557E2A71FFEF0034201A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894F557D2A71FFEF0034201A /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		892E89672A73503F00254B54 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		892E89692A73520A00254B54 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		892E896B2A736C2C00254B54 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		892E896D2A738A0500254B54 /* TodoInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoInformation.swift; sourceTree = "<group>"; };
 		894F55762A71FFEF0034201A /* Week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		894F55792A71FFEF0034201A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		894F557B2A71FFEF0034201A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				892E89672A73503F00254B54 /* CustomTableViewController.swift */,
 				892E89692A73520A00254B54 /* CustomTableViewCell.swift */,
 				892E896B2A736C2C00254B54 /* Todo.swift */,
+				892E896D2A738A0500254B54 /* TodoInformation.swift */,
 				894F557F2A71FFEF0034201A /* Main.storyboard */,
 				894F559C2A7265F10034201A /* Extension */,
 				894F55992A72588C0034201A /* Assignment */,
@@ -204,6 +207,7 @@
 				894F559B2A7260690034201A /* Setting.swift in Sources */,
 				894F557C2A71FFEF0034201A /* SceneDelegate.swift in Sources */,
 				894F55A02A7266DB0034201A /* UITableViewController+.swift in Sources */,
+				892E896E2A738A0500254B54 /* TodoInformation.swift in Sources */,
 				892E896A2A73520A00254B54 /* CustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
