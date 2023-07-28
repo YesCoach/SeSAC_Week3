@@ -9,7 +9,8 @@ import Foundation
 
 struct Movie {
     var title: String
-    var releaseDate: Date
-    var summary: String
-    var grade: Double
+    var releaseDate: String
+    var runtime: Int
+    var overview: String
+    var rate: Double
 }
