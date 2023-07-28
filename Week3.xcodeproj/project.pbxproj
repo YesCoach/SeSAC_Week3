@@ -93,8 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				894F55952A724FFC0034201A /* Setting.storyboard */,
-				892E895E2A726C7E00254B54 /* ShoppingViewController.swift */,
 				894F55972A7258840034201A /* AppSettingViewController.swift */,
+				892E895E2A726C7E00254B54 /* ShoppingViewController.swift */,
 				894F559A2A7260690034201A /* Setting.swift */,
 			);
 			path = Assignment;

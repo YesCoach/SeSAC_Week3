@@ -17,6 +17,8 @@ final class AppSettingViewController: UITableViewController {
 // MARK: - DataSource 구현부
 
 extension AppSettingViewController {
+
+    // 100% 모든 경우의 수를 return 해주어야 함
     override func tableView(
         _ tableView: UITableView,
         titleForHeaderInSection section: Int

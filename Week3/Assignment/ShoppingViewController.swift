@@ -22,12 +22,6 @@ final class ShoppingViewContorller: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-
-        let tapGesture = UITapGestureRecognizer(
-            target: self,
-            action: #selector(didBackgroundViewTouched(_:))
-        )
-        tableView.addGestureRecognizer(tapGesture)
     }
 
     @objc func didBackgroundViewTouched(_ sender: UITapGestureRecognizer) {
@@ -56,6 +50,7 @@ extension ShoppingViewContorller {
     func configureUI() {
         tableHeaderView.layer.cornerRadius = 10.0
         tableView.rowHeight = 60.0
+        tableView.keyboardDismissMode = .onDrag
     }
 }
 
