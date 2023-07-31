@@ -68,4 +68,21 @@ extension MovieListViewController {
         }
         return cell
     }
+
+    override func tableView(
+        _ tableView: UITableView,
+        leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath
+    ) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(
+            style: .normal,
+            title: "즐겨찾기"
+        ) { [weak self] action, view, completionHandler in
+            self?.data[indexPath.row].isFavorite = true
+            tableView.reloadRows(at: [indexPath], with: .fade)
+            completionHandler(true)
+        }
+        action.image = .init(systemName: "star.fill")
+        action.backgroundColor = .systemYellow
+        return .init(actions: [action])
+    }
 }
