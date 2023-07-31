@@ -75,7 +75,7 @@ extension MovieListViewController {
     ) -> UISwipeActionsConfiguration? {
         let action = UIContextualAction(
             style: .normal,
-            title: "즐겨찾기"
+            title: nil
         ) { [weak self] action, view, completionHandler in
             self?.data[indexPath.row].isFavorite = true
             tableView.reloadRows(at: [indexPath], with: .fade)
@@ -83,6 +83,22 @@ extension MovieListViewController {
         }
         action.image = .init(systemName: "star.fill")
         action.backgroundColor = .systemYellow
+        return .init(actions: [action])
+    }
+
+    override func tableView(
+        _ tableView: UITableView,
+        trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath
+    ) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(
+            style: .destructive,
+            title: nil
+        ) { [weak self] action, view, completionHandler in
+            self?.data.remove(at: indexPath.row)
+            tableView.reloadData()
+            completionHandler(true)
+        }
+        action.image = .init(systemName: "trash")
         return .init(actions: [action])
     }
 }
